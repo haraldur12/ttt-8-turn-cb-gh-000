@@ -64,4 +64,3 @@ def available_moves(board,moves)
     return true
   end
 end
-turn(board,moves)
