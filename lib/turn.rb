@@ -9,7 +9,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def turn(board,moves)
+def turn(board)
   display_board(board)
   puts "Please enter 1-9:"
   input = gets.strip()
@@ -27,7 +27,7 @@ def turn(board,moves)
       display_board(board)
       moves += 1
     else
-      turn(board,moves)
+      turn(board)
     end
   end
 end
